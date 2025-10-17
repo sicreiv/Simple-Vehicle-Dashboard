@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Vehicle Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <img src="media/logo.png" alt="Dashboard Logo" class="logo">
+        <h1 class="dashboard-header">Vehicle ni Sagarino Dashboard</h1>
+        
+        <div class="dashboard-metrics">
+            <div class="metric-container circle-group">
+                <div id="speed-metric" class="circle-metric"><span id="speed-value">0 km/h</span></div>
+                <div class="label">Speedometer</div>
+            </div>
+            
+            <div class="metric-container circle-group">
+                <div id="rpm-metric" class="circle-metric"><span id="rpm-value">0 rpm</span></div>
+                <div class="label">Tachometer</div>
+            </div>
+            
+            <div class="rectangular-group">
+                <div class="metric-container">
+                    <div id="fuel-metric" class="rectangular-metric"><span id="fuel-value">100%</span></div>
+                    <div class="label">Fuel Gauge</div>
+                </div>
+                <div class="metric-container">
+                    <div id="temp-metric" class="rectangular-metric"><span id="temp-value">0 °C</span></div>
+                    <div class="label">Temperature Gauge</div>
+                </div>
+                <div class="metric-container">
+                    <div id="distance-metric" class="rectangular-metric"><span id="distance-value">0 km</span></div>
+                    <div class="label">Odometer</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="accelerate-btn">Accelerate</button>
+            <button id="brake-btn">Brake</button>
+            <button id="refuel-btn">Refuel</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
